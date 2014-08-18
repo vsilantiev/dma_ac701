@@ -1,0 +1,554 @@
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc7a200tfbg676-3 -lang vhdl -intstyle default -lp
+D:/WORK/zedboard/cf_lib/ -msg __xps/ise/xmsgprops.lst system.mhs 
+
+Parse D:/WORK/zedboard/cf_ad9467_vc707/system.mhs ...
+
+Read MPD definitions ...
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 93 
+WARNING:EDK:4092 - IPNAME: clock_generator, INSTANCE: clock_generator_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 155 
+WARNING:EDK:4088 - IPNAME: axi_dma, INSTANCE: axi_dma_0 - Superseded core for
+   architecture 'artix7' - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 320 
+WARNING:EDK:4092 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 93 
+WARNING:EDK:4092 - IPNAME: clock_generator, INSTANCE: clock_generator_0 -
+   Pre-Production version not verified on hardware for architecture 'artix7' -
+   D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 155 
+WARNING:EDK:4088 - IPNAME: axi_dma, INSTANCE: axi_dma_0 - Superseded core for
+   architecture 'artix7' - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 320 
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to artix7 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to artix7 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_7series_ddrx, INSTANCE:DDR3_SDRAM - tcl is
+   overriding PARAMETER C_IODELAY_GRP value to DDR3_SDRAM -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_7series_ddrx_v1_
+   08_a\data\axi_7series_ddrx_v2_1_0.mpd line 116 
+INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
+   PARAMETER C_NUM_INTR_INPUTS value to 4 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 85 
+INFO:EDK:4130 - IPNAME: axi_dma, INSTANCE:axi_dma_0 - tcl is overriding
+   PARAMETER C_PRMRY_IS_ACLK_ASYNC value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_dma_v5_00_a\data
+   \axi_dma_v2_1_0.mpd line 86 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   axi_adc_1c_0:adc_clk. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:EDK:1039 - Did not update the value for parameter:
+   axi_dma_0:C_M_AXI_SG_ACLK_FREQ_HZ. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00007fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) axi_gpio_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40a00000-0x40a0ffff) axi_spi_0	axi4lite_0
+  (0x41200000-0x4120ffff) axi_intc_0	axi4lite_0
+  (0x41c00000-0x41c0ffff) axi_timer_0	axi4lite_0
+  (0x41e00000-0x41e0ffff) axi_dma_0	axi4lite_0
+  (0x73000000-0x7300ffff) axi_adc_1c_0	axi4lite_0
+  (0x74800000-0x7480ffff) debug_module	axi4lite_0
+  (0xc0000000-0xffffffff) DDR3_SDRAM	axi4_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 8 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4_0 - 3 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: Interrupt_address_in, CONNECTOR: Interrupt_address_in -
+   No driver found. Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 131 
+WARNING:EDK:4180 - PORT: tdi_in, CONNECTOR: bscan_tdi - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\chipscope_icon_v1_06
+   _a\data\chipscope_icon_v2_1_0.mpd line 101 
+WARNING:EDK:4180 - PORT: reset_in, CONNECTOR: bscan_reset - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\chipscope_icon_v1_06
+   _a\data\chipscope_icon_v2_1_0.mpd line 102 
+WARNING:EDK:4180 - PORT: shift_in, CONNECTOR: bscan_shift - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\chipscope_icon_v1_06
+   _a\data\chipscope_icon_v2_1_0.mpd line 103 
+WARNING:EDK:4180 - PORT: update_in, CONNECTOR: bscan_update - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\chipscope_icon_v1_06
+   _a\data\chipscope_icon_v2_1_0.mpd line 104 
+WARNING:EDK:4180 - PORT: sel_in, CONNECTOR: bscan_sel1 - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\chipscope_icon_v1_06
+   _a\data\chipscope_icon_v2_1_0.mpd line 105 
+WARNING:EDK:4180 - PORT: drck_in, CONNECTOR: bscan_drck1 - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\chipscope_icon_v1_06
+   _a\data\chipscope_icon_v2_1_0.mpd line 106 
+WARNING:EDK:4180 - PORT: capture_in, CONNECTOR: bscan_capture - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\chipscope_icon_v1_06
+   _a\data\chipscope_icon_v2_1_0.mpd line 107 
+WARNING:EDK:4181 - PORT: Processor_ack_out, CONNECTOR: Processor_ack_out -
+   floating connection -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 132 
+WARNING:EDK:4181 - PORT: tdo_out, CONNECTOR: bscan_tdo1 - floating connection -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\chipscope_icon_v1_06
+   _a\data\chipscope_icon_v2_1_0.mpd line 108 
+WARNING:EDK:4181 - PORT: mm2s_prmry_reset_out_n, CONNECTOR: RESET_OUT_N -
+   floating connection -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_dma_v5_00_a\data
+   \axi_dma_v2_1_0.mpd line 212 
+WARNING:EDK:4181 - PORT: mm2s_cntrl_reset_out_n, CONNECTOR: RESET_OUT_N -
+   floating connection -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_dma_v5_00_a\data
+   \axi_dma_v2_1_0.mpd line 218 
+WARNING:EDK:4181 - PORT: s2mm_prmry_reset_out_n, CONNECTOR: RESET_OUT_N -
+   floating connection -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_dma_v5_00_a\data
+   \axi_dma_v2_1_0.mpd line 240 
+WARNING:EDK:4181 - PORT: s2mm_sts_reset_out_n, CONNECTOR: RESET_OUT_N - floating
+   connection -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_dma_v5_00_a\data
+   \axi_dma_v2_1_0.mpd line 246 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: axi_dma_0, PARAMETER: C_M_AXI_SG_ACLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_INTERCONNECT_M_AXI_IC_READ_ISSUING value to 8 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 362 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 16 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 16 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_INTERRUPT value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 401 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi4_0; no DECERR
+checking will be performed.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4_0 - tcl is overriding
+   PARAMETER C_RANGE_CHECK value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111111000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 87 
+INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 88 
+INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_LVL value to 0b11111111111111111111111111111111 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 89 
+INFO:EDK:4130 - IPNAME: chipscope_icon, INSTANCE:chipscope_icon_0 - tcl is
+   overriding PARAMETER C_SYSTEM_CONTAINS_MDM value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\chipscope_icon_v1_06
+   _a\data\chipscope_icon_v2_1_0.mpd line 81 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+INFO:EDK - IPNAME: axi_7series_ddrx, INSTANCE:DDR3_SDRAM - Invoking MIG ...
+Loading device for application Rf_Device from file '7a200t.nph' in environment
+C:\Xilinx\14.7\ISE_DS\EDK;C:\Xilinx\14.7\ISE_DS\ISE.
+INFO:EDK - IPNAME: axi_7series_ddrx, INSTANCE:DDR3_SDRAM - MIG returned 0
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+INFO:EDK - IPNAME: axi_7series_ddrx, INSTANCE:DDR3_SDRAM - Clock port
+'freq_refclk' phase DRC passed.
+INFO:EDK - IPNAME: axi_7series_ddrx, INSTANCE:DDR3_SDRAM - Clock port
+'freq_refclk' frequency DRC passed.
+INTC INFO:: Processor_clk not connected. IRQ is generated on AXI clock.
+Chipscope Integrate Controller, instance 'chipscope_icon', exists in System 
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+INFO: No asynchronous clock conversions in axi_interconnect axi4_0.
+INTC_INFO_CONSTRAINTS:: Adding Edge interrupt constraints
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:chipscope_ila INSTANCE:chipscope_ila_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 279 - Copying (BBD-specified)
+netlist files.
+IPNAME:chipscope_icon INSTANCE:chipscope_icon_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 293 - Copying (BBD-specified)
+netlist files.
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 93 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 155 - elaborating IP
+ClkGen elaborate status: PASSED
+16.000
+10.0
+WARNING:EDK - : Phase value 337.5 is converted to 337.5
+
+WARNING:EDK - : Phase value 0.0000 is converted to 0.0
+
+WARNING:EDK - : Phase value 9.84375 is converted to 9.84375
+
+WARNING:EDK - : Phase value 0.0000 is converted to 0.0
+
+WARNING:EDK - : Phase value 0.0 is converted to 0.0
+
+WARNING:EDK - : Phase value 0.0 is converted to 0.0
+
+----------------------------------------
+----------------------------------------
+IPNAME:chipscope_ila INSTANCE:chipscope_ila_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 279 - elaborating IP
+Created elaborate directory hdl/elaborate/chipscope_ila_0_v1_05_a/synhdl/vhdl/
+Generating ChipScope core: chipscope_ila_0 ...
+ChipScope Core Generator command: coregen.exe -b
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_ila_0.xco
+Release 14.7 - Xilinx CORE Generator P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+D:\WORK\zedboard\cf_ad9467_vc707\implementation\chipscope_ila_0_wrapper\coregen.
+log
+Updating project device from '7a200t' to 'xc7a200t'.
+Wrote CGP file for project 'coregen'.
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+Configuring files for chipscope_ila_0 root...
+Gathering HDL files for chipscope_ila_0 root...
+Creating XST project for chipscope_ila_0...
+Creating XST script file for chipscope_ila_0...
+Creating XST instantiation file for chipscope_ila_0...
+Running XST for chipscope_ila_0...
+XST: HDL Parsing
+XST: HDL Elaboration
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Design Summary
+Not generating VHDL wrapper
+Not generating Verilog wrapper
+Skipping VHDL instantiation template for chipscope_ila_0...
+Skipping Verilog instantiation template for chipscope_ila_0...
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: chipscope_ila_0.xco
+XMDF file found: chipscope_ila_0_xmdf.tcl
+WARNING:EDK - : chipscope_ila_0.vhd does not exist, will not be added to ISE
+   project.
+
+WARNING:EDK - : chipscope_ila_0.vho does not exist, will not be added to ISE
+   project.
+
+Adding
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg/
+chipscope_ila_0.asy -view all -origin_type imported
+Adding
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg/
+chipscope_ila_0.ngc -view all -origin_type created
+Checking file
+"D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg
+/chipscope_ila_0.ngc" for project device match ...
+File
+"D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg
+/chipscope_ila_0.ngc" device information matches project device.
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/chipscope_ila_0"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+*************************************************************
+IPNAME:chipscope_icon INSTANCE:chipscope_icon_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 293 - elaborating IP
+Created elaborate directory hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/
+Generating ChipScope core: chipscope_icon_0 ...
+ChipScope Core Generator command: coregen.exe -b
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_icon_0.xco
+Release 14.7 - Xilinx CORE Generator P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+D:\WORK\zedboard\cf_ad9467_vc707\implementation\chipscope_icon_0_wrapper\coregen
+.log
+Updating project device from '7a200t' to 'xc7a200t'.
+Wrote CGP file for project 'coregen'.
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+Configuring files for chipscope_icon_0 root...
+Gathering HDL files for chipscope_icon_0 root...
+Creating XST project for chipscope_icon_0...
+Creating XST script file for chipscope_icon_0...
+Creating XST instantiation file for chipscope_icon_0...
+Running XST for chipscope_icon_0...
+XST: HDL Parsing
+XST: HDL Elaboration
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Design Summary
+Not generating VHDL wrapper
+Not generating Verilog wrapper
+Skipping VHDL instantiation template for chipscope_icon_0...
+Skipping Verilog instantiation template for chipscope_icon_0...
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: chipscope_icon_0.xco
+XMDF file found: chipscope_icon_0_xmdf.tcl
+WARNING:EDK - : chipscope_icon_0.vhd does not exist, will not be added to ISE
+   project.
+
+WARNING:EDK - : chipscope_icon_0.vho does not exist, will not be added to ISE
+   project.
+
+Adding
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_icon_0_wrapper/tmp/_cg
+/chipscope_icon_0.asy -view all -origin_type imported
+Adding
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_icon_0_wrapper/tmp/_cg
+/chipscope_icon_0.ngc -view all -origin_type created
+Checking file
+"D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_icon_0_wrapper/tmp/_c
+g/chipscope_icon_0.ngc" for project device match ...
+File
+"D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_icon_0_wrapper/tmp/_c
+g/chipscope_icon_0.ngc" device information matches project device.
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/chipscope_icon_0"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+*************************************************************
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:proc_sys_reset_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 48
+- Running XST synthesis
+INSTANCE:microblaze_0_ilmb - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 61
+- Running XST synthesis
+INSTANCE:microblaze_0_i_bram_ctrl - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs
+line 68 - Running XST synthesis
+INSTANCE:microblaze_0_dlmb - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 77
+- Running XST synthesis
+INSTANCE:microblaze_0_d_bram_ctrl - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs
+line 84 - Running XST synthesis
+INSTANCE:microblaze_0_bram_block - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs
+line 93 - Running XST synthesis
+INSTANCE:microblaze_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 100 -
+Running XST synthesis
+INSTANCE:debug_module - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 142 -
+Running XST synthesis
+INSTANCE:clock_generator_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line
+155 - Running XST synthesis
+INSTANCE:axi4lite_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 185 -
+Running XST synthesis
+INSTANCE:axi4_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 193 - Running
+XST synthesis
+INSTANCE:rs232_uart_1 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 201 -
+Running XST synthesis
+INSTANCE:ddr3_sdram - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 217 -
+Running XST synthesis
+INSTANCE:axi_timer_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 258 -
+Running XST synthesis
+INSTANCE:axi_intc_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 268 -
+Running XST synthesis
+INSTANCE:chipscope_ila_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 279
+- Running XST synthesis
+INSTANCE:chipscope_icon_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 293
+- Running XST synthesis
+INSTANCE:axi_adc_1c_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 299 -
+Running XST synthesis
+INSTANCE:axi_dma_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 320 -
+Running XST synthesis
+INSTANCE:axi_spi_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 340 -
+Running XST synthesis
+INSTANCE:util_spi_3w_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 355 -
+Running XST synthesis
+INSTANCE:axi_gpio_0 - D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 369 -
+Running XST synthesis
+
+Running NGCBUILD ...
+IPNAME:system_microblaze_0_ilmb_wrapper INSTANCE:microblaze_0_ilmb -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 61 - Running NGCBUILD
+IPNAME:system_microblaze_0_dlmb_wrapper INSTANCE:microblaze_0_dlmb -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 77 - Running NGCBUILD
+IPNAME:system_microblaze_0_wrapper INSTANCE:microblaze_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 100 - Running NGCBUILD
+IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 155 - Running NGCBUILD
+IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 185 - Running NGCBUILD
+IPNAME:system_axi4_0_wrapper INSTANCE:axi4_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 193 - Running NGCBUILD
+IPNAME:system_ddr3_sdram_wrapper INSTANCE:ddr3_sdram -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 217 - Running NGCBUILD
+IPNAME:system_chipscope_ila_0_wrapper INSTANCE:chipscope_ila_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 279 - Running NGCBUILD
+IPNAME:system_chipscope_icon_0_wrapper INSTANCE:chipscope_icon_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 293 - Running NGCBUILD
+IPNAME:system_axi_dma_0_wrapper INSTANCE:axi_dma_0 -
+D:\WORK\zedboard\cf_ad9467_vc707\system.mhs line 320 - Running NGCBUILD
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 1337.00 seconds
